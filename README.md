@@ -1,7 +1,7 @@
 # Motivation
 I'm new to js from cpp and I want to transfer my knowledge from one programming language to another. However it's hard, js brings new ideas of programming to me, such as functional programming, and of course the special object model.
 
-As I learn js, I want to understand object and prototype, I find [the article](https://github.com/mqyqingfeng/Blog/issues/2) is helpful. An idea comes up when I finished reading, why not simulate examples in cpp?
+As I learn js, I want to understand object and prototype, I find this [article](https://github.com/mqyqingfeng/Blog/issues/2) is helpful. An idea comes up when I finished reading, why not simulate examples in cpp?
 
 Of course the ultimate way to understand a programming language is to implement it. However it's time consuming when your target is binary code or bytecode. As the essence of compilation is just "translation", so we can translate js code to cpp, that's another way to "implement" it.
 
