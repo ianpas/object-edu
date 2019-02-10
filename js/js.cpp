@@ -22,7 +22,7 @@ namespace JS
 			BuiltIn::Object->Set("prototype", prototype);
 
 			/*
-				method of Object
+				methods of Object
 			*/
 			auto keys = std::make_shared<EmptyObject>();
 			keys->Set<Type::KeysMethod>("code", [](Type::ObjectRef obj) {

@@ -83,6 +83,9 @@ namespace ObjectTest
 			// expect(obj.a).toEqual(1);
 			Assert::AreEqual(1, obj->Get<int>("a"));
 
+			// expect(obj.__proto__.a).toEqual(1);
+			Assert::AreEqual(1, obj->Get("__proto__")->Get<int>("a"));
+
 			// delete Object.prototype.a;
 			auto count = prototype->Delete<int>("a");
 
@@ -126,7 +129,7 @@ namespace ObjectTest
 				{
 					 this.name = "bob";
 					 this.age = age;
-					 this.greet = () => { return "hi" };
+					 this.greet = () => "hi";
 				}
 			*/
 			auto Person = Function->Invoke<Type::FunctionConstructorFunction>();
@@ -150,7 +153,7 @@ namespace ObjectTest
 
 					this.name = "bob";
 					this.age = age;
-					this.greet = () => { return "hi" };
+					this.greet = () => "hi";
 
 				*/
 				__this->Set("name", std::string{ "bob" });

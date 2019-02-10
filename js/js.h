@@ -23,7 +23,7 @@ namespace JS
 
 		to simulate the behavior of something likes "const obj = new Object()",
 		with Object is actually an object bear in mind,
-		we use equivalent cpp "const obj = Object.Get<...>("code")()"
+		we use equivalent cpp ...->Invoke<...>...
 	*/
 
 	class BuiltIn

@@ -1,11 +1,9 @@
 test("create", () =>
 {
-    //
     const obj = new Object();
     obj.value = 1;
     expect(obj.value).toEqual(1);
 
-    //
     const nest = new Object();
     nest.value = 2;
 
@@ -43,7 +41,7 @@ test("access", () =>
 
 test("function", () =>
 {
-    // TODO： anonymous constructor of f.prototype
+    // TODO: anonymous constructor of f.prototype
     const f = new Function();
     expect(f.__proto__).toEqual(Function.prototype);
 
@@ -60,7 +58,7 @@ test("constructor function", () =>
     {
         this.name = "bob";
         this.age = age;
-        this.greet = () => { return "hi" };
+        this.greet = () => "hi";
     }
 
     expect(Person.__proto__).toEqual(Function.prototype);
