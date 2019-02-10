@@ -1,0 +1,15 @@
+{
+  "name": "object-test",
+  "version": "0.0.1",
+  "description": "test object",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "ianpas",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
