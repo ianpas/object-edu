@@ -368,7 +368,7 @@ For example, the "Object" you use in js is implemented in this project as follow
     BuiltIn::Object->Set<Type::ObjectConstructorFunction>("code", code);
     ```
 
-As for Object class the "Object instanced" created from, there are some utility methods such as the one makes finding property in prototype chain possible:
+As for Object class the "Object instance" created from, there are some utility methods such as the one makes finding property in prototype chain possible:
 
 ```cpp
 ...
